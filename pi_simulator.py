@@ -2,7 +2,8 @@ import os
 from time import *
 from random import *
 
-directory_path = '/home/nmerc54/Documents/Python_Files/Email_Writer/_event_database/'
+#directory_path = '/home/nmerc54/Documents/Python_Files/Email_Writer/_event_database/'
+directory_path = '_event_database/'
 picture_file = directory_path + 'test.jpg'
 data_file = directory_path + 'data.txt'
 

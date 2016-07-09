@@ -1,0 +1,4 @@
+7/8/2016
+It isn't running well on the Pi for whatever reason. I'm going to try to run on the VM for comparison.
+
+

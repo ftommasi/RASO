@@ -1,4 +1,0 @@
-Current:     49.3830366167 mA
-Voltage:     9.25865400576 V
-Temperature: 39.5329104982 C
-Timestamp:   12:03:53
