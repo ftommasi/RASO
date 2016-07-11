@@ -4,27 +4,23 @@ from send_email import *
 
 #directory_path = "/home/nmerc54/Documents/Python_Files/Email_Writer/_event_database/"
 directory_path = '_event_database/'
-data_file = directory_path + 'data.txt'
+data_file = 'data.txt'
 address = "nick.fausto.pi@gmail.com"
 
 
 try:
-   while True:
-      try:
-         with open(data_file) as f:
-            for line in f:
-               if "Event Flag" in line:
-                 # send_email(address, address, "Event flag raised", "Event: Discovered")
-                  print line
-               else:
-                  print line
+   database = open(data_file)
+   for line in database:
+      if line.strip() == "EventFlag":
+         #sendemail code goes here
+         print "Email sent!"
+      else:
+         print "No flags raised. No action taken"
+   database.close()
+   os.rename(data_file,"READ"+data_file) #Mark the file as read
    
-         print '---------------------'
-         os.remove(data_file)
-         sleep(1.0)
-      except:
-         True
-except KeyboardInterrupt:
-   pass
+   
+except IOError:
+   print "Data not found"
 
 
